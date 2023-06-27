@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./login.css";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import axios from "axios";
-const BASE_URL = "http://localhost:3006";
+//const BASE_URL = "http://localhost:3006";
+const BASE_URL = "https://vault-backend-yw55.onrender.com";
 function Login() {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");

@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
-const BASE_URL = "http://localhost:3006";
+// const BASE_URL = "http://localhost:3006";
+const BASE_URL = "https://vault-backend-yw55.onrender.com";
 async function fetchData(id) {
   try {
     const allData = await axios.get(BASE_URL + "/api/v1/data/" + id);

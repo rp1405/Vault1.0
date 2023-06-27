@@ -2,7 +2,8 @@ import "./signup.css";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-const BASE_URL = "http://localhost:3006";
+// const BASE_URL = "http://localhost:3006";
+const BASE_URL = "https://vault-backend-yw55.onrender.com";
 function Signup() {
   const [user_name, setName] = useState("");
   const [user, setUser] = useState("");

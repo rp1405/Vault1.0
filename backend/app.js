@@ -11,7 +11,7 @@ const data = require("./routes/data");
 app.use("/api/v1/tasks", tasks);
 app.use("/api/v1/data", data);
 
-const port = 3006;
+const port = process.env.port || 3006;
 //MONGO DB CONNECT
 const connectDB = require("./db/connect");
 const start = async () => {
